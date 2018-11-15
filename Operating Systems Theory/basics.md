@@ -109,18 +109,18 @@ A Unix Kernel has 2 parts.
 The high parts is all declenched by the userland, and by syscalls (API). 
 The low parts purpose is bounded to Exceptions and interruptions (and its reactions appropriated) 
 
-
-
-
-
 ## Facts 
 - A processor is way faster than any other hardware components, even flash memory.  
 - The network harware generate a lot of Interruption (Make interruption at any request on a network).  
 - A network flood generating a lot of interruption may be used as an attack.  
 - If you try to make a division by 0 : It will generate an interruption and the OS will be requested to interract with this monstruosity. 
 - There is two type of interruption, software interruptions and hardware interruptions.  
+- EFI is a necessary partition of UEFI
 
 ## Glossaire 
+### LIVE CD
+A live CD is a peripheric which contains enough data to boot itself on its own OS
+
 ### MBR
 Master Boot Record -> 512 first bytes of our Memory. A part of the MBR, the Bootstrap 416 first bytes whose purpose is to be loaded by the Bios to be executed by the process on Boot. 
 me

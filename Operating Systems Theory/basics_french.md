@@ -114,6 +114,7 @@ The low parts purpose is bounded to Exceptions and interruptions (and its reacti
 - Une inondation de réseau générant de nombreuses interruptions peut être utilisée comme une attaque (DOS).
 - Si vous essayez de faire une division par 0: cela générera une interruption et le système d'exploitation sera invité à interagir avec cette monstruosité.
 - Il existe deux types d'interruption: les interruptions logicielles et les interruptions matérielles.
+- EFI est une partition nécessaire à l'UEFI
 
 ## Glossaire 
 ### MBR
