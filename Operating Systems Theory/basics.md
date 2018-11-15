@@ -146,9 +146,10 @@ Unified Extensible Firmware Interface is the successor of BIOS. It's a micro-sof
 The UEFI is used to make an interface between the firmware and the OS.
 
 
-### GPT (ça pue)
+### GPT
 
-### NTFS (montre les moi tes fesses)
+### NTFS
 Disk encoding format.
 
-### FAT(not me)
+### FAT
+Another disk encoding format.

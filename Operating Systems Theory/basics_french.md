@@ -35,7 +35,7 @@ comme des expressions mathématiques ou des integers (entiers) (ADD/SUB/DIV).
 Meltdown est une vulnérabilité matérielle affectant les microprocesseurs Intel x86, les processeurs IBM POWER et certains microprocesseurs basés sur ARM. Cela permet à un processus malhonnête de lire toute la mémoire, même s'il n'est pas autorisé à le faire.
 
 Source: [Meltdown (vulnérabilité) on Wikipedia](https://fr.wikipedia.org/wiki/Meltdown_(vuln%C3%A9rabilit%C3%A9))
-BITE
+
 ### Spectre
 Spectre est une vulnérabilité qui affecte les microprocesseurs modernes effectuant une "prédiction de branche". Sur la plupart des processeurs l'exécution spéculative résultant d'une mauvaise prédiction de branche peut laisser des effets secondaires observables susceptibles de révéler des données privées aux attaquants. Par exemple, si la configuration des accès à la mémoire effectuée lors d’une telle exécution spéculative dépend de données privées, l’état résultant du cache de données constitue un canal latéral par lequel un attaquant peut extraire des informations sur les données privées en utilisant une attaque temporelle.
 
@@ -71,7 +71,7 @@ En virtualisation, il n'y a pas d'interruption matérielle puisqu'il "n'y a pas"
 L'hyperviseur de la machine hôte récupérera la demande et stockera la demande dans un fichier. Il fournira ensuite des réponses à la machine virtuelle.
 
 ---
-BITE
+
 ## Boot // Démarrage
 ```
 Materiel 
@@ -103,6 +103,11 @@ Pilotes (matériel, NTFS) + chargeur de démarrage
 ## API SYSCALLS
 Un appel système (Syscall) permet d'obtenir un accès abstrait à un matériel. Nous n'avons pas besoin de savoir comment fonctionne un matériel pour y accéder et l'utiliser.
 
+## UNIX MONOLITHIQUE
+Un noyeau UNIX est composé en deux parties.
+The high parts is all declenched by the userland, and by syscalls (API). 
+The low parts purpose is bounded to Exceptions and interruptions (and its reactions appropriated) 
+
 ## Informations 
 - Un processeur est bien plus rapide que tout autre composant matériel, même la mémoire flash.. 
 - Le matériel réseau génère beaucoup d’interruptions (interruption à chaque requête sur un réseau).
@@ -112,27 +117,28 @@ Un appel système (Syscall) permet d'obtenir un accès abstrait à un matériel.
 
 ## Glossaire 
 ### MBR
-Master Boot Record -> 512 first bytes of our Memory. A part of the MBR, the Bootstrap 416 first bytes whose purpose is to be loaded by the Bios to be executed by the process on Boot. 
-me
+Master Boot Record -> 512 premiers octets de la mémoire. Une partie du MBR, les 416 premiers octets de Bootstrap destinés à être chargés par le Bios pour être exécutés par le processus à l’amorçage.
 
 ### EPROM
+Mémoire morte programmable effaçable:
 
 ### BIOS 
 
 ### ASM
-Machine language used to make processor's call. (ACRONIM MEANING ??????)
+Langage machine utilisé pour passer l'appel du processeur. (ACRONIM ??????)
  
 ### RAM
 
 ### FAT
 
 ### UEFI
+Unified Extensible Firmware Interface est le successeur du BIOS. C'est un micro-logiciel utilisé dans la plupart des ordinateurs modernes.
 
-Unified Extensible Firmware Interface is the successor of BIOS. It's a micro-software used in most part of modern computers
-
+L'UEFI sert à créer une interface entre le micrologiciel et le système d'exploitation.
 
 ### GPT (ça pue)
-BITE BITE 
+
 ### NTFS (montre les moi tes fesses)
+Disk encoding format.
 
 ### FAT(not me)

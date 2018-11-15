@@ -11,4 +11,7 @@ Text
 Text
 ```
 
-The text can contain every informations depending on the subtitle's name. Also, a sub-categories can exists recursively, as you want to.私
+The text can contain every informations depending on the subtitle's name. Also, a sub-categories can exists recursively, as you want to.
+
+## Helping
+Feel free to improve
