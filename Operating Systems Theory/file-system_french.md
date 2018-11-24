@@ -1,4 +1,4 @@
-Dans un disque dur classique, il y a plusieurs bras écrivant sur les diskues, le bras reste fixe et fait tourner le disque pour sélectionner la lecture sur laquelle il va lire.
+Dans un disque dur classique, il y a plusieurs bras écrivant sur les disques, le bras reste fixe et fait tourner le disque pour sélectionner la lecture sur laquelle il va lire.
 
 Un disque fait 200 tours seconde, 7400 tours minutes pour les plus rapides.
 Il y a des mécanismes anti choc pour pallier à la friction et l'inertie générée par ces tours.a
@@ -7,7 +7,7 @@ On lis donc tous les plateaux en même temps.
 
 un disque dur contient :
     -un plateau bisurface
-    -1 tete de lecture par surface
+    -1 tête de lecture par surface
     -des secteurs (512 octets / 4K)
     -un cylindre (alignant les têtes)
 
@@ -20,7 +20,7 @@ Il y a plusieurs type de stockage :
 Constant Linear Velocity (ce n'est pas adapté au disque dur, uniquement pour les CD/DVD/BlueRay car cela augmente le "seek time"):
 La densité de donnée sur le disque est la même partout mais pas la vitesse.
 
-Pour les disques durs, la technologie utilisé est la "constant angulare velocity" :
+Pour les disques durs, la technologie utilisée est la "constant angulare velocity" :
 La vitesse est constante, la densitée varie (plus importante au centre qu'a l'exterieur). Avec cette variation de densitée, le flux de données est plus constante.
 
 
@@ -40,7 +40,7 @@ Il sert d'interface "abstraites"
  Il gère les régles d'accès aux fichiers
  Il gère aussi la taille du fichiers, son nom et ses propriétaires la date de modification et son type.
 
-FAT : F ile Allocation Table
+FAT : File Allocation Table
 
 
                             
